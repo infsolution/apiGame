@@ -23,3 +23,5 @@ urlpatterns = [
     path('game/',include('game.urls')),
     path('api-token-auth/', obtain_auth_token),
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
