@@ -25,7 +25,7 @@ SECRET_KEY = '70ml%x1g94!dbzxu_czn3x!o8zgp-mv+bsah%aly-#l3@c2^!d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','tsht.tk']
 
 
 # Application definition
