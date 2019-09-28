@@ -7,6 +7,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('url','id','username','email', 'password')
 
 class PlayerSerializer(serializers.HyperlinkedModelSerializer):
+    user = serializers.SlugRelatedField(queryset=User.objects.all(), slug_field='username')
     class Meta:
         model = Player
         fields = ('url', 'id', 'name', 'user','created_at', 'escore')
