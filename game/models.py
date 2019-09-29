@@ -8,5 +8,6 @@ class Player(models.Model):
 	email_validated = models.BooleanField(default=False)
 	created_at = models.DateField(auto_now_add=True)
 	escore = models.IntegerField(default=0)
+	level = models.IntegerField(default=1)
 	class Meta:
 		ordering = ('-escore',)
